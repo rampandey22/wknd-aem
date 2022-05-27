@@ -12,7 +12,7 @@ public class CommonConstants {
 	public static final String FIRST_NAME_ERROR_MESSAGE = "Please provide first name";
 	public static final String LAST_NAME_ERROR_MESSAGE = "Please provide last name";
 	public static final String EMAIL_ERROR_MESSAGE = "Please provide email address";
-	public static final String FIRST_NAME_FORMAT_MESSAGE = "First name should be atleat three characters";
+	public static final String FIRST_NAME_FORMAT_MESSAGE = "First name should be atleat three characters and can't have numbers";
 	public static final String LAST_NAME_FORMAT_MESSAGE = "Last name should be atleat three characters";
 	public static final String EMAIL_FORMAT_MESSAGE = "Please fix the format of email address";
 	public static final String CONTENT_TYPE = "application/json";
@@ -21,5 +21,6 @@ public class CommonConstants {
 	public static final String NO_CACHE = "nocache";
 	public static final String URI = "https://api.genderize.io/?name=";
 	public static final String API_ERROR = "Error calling external API";
+	public static final String NAME_FORMAT = "\\w+\\s{1}\\w+\\s{1}\\w+";
 
 }

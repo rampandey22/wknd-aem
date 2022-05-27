@@ -60,7 +60,7 @@ public class EventRegistrationServlet extends SlingSafeMethodsServlet {
 				errorMessageList.add(CommonConstants.FIRST_NAME_ERROR_MESSAGE);
 			}
 
-			else if (firstname.length() <= 2)
+			else if (!(firstname.matches(CommonConstants.NAME_FORMAT)))
 				errorMessageList.add(CommonConstants.FIRST_NAME_FORMAT_MESSAGE);
 
 			else {
